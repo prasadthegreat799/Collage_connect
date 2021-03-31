@@ -5,31 +5,10 @@
     android:layout_height="match_parent"
     tools:context=".Imagesfragment">
 
-    <ImageView
-        android:id="@+id/pic1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/user_dp"/>
-
-    <ImageView
-        android:id="@+id/pic2"
-        android:layout_below="@id/pic1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/user_dp"/>
-
-    <ImageView
-        android:id="@+id/pic3"
-        android:layout_below="@id/pic2"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/user_dp"/>
-
-    <ImageView
-        android:id="@+id/pic4"
-        android:layout_below="@id/pic3"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/user_dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/imagerecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
 
 </RelativeLayout>
