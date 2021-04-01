@@ -56,7 +56,7 @@
             android:layout_marginTop="10dp"/>
 
         <Button
-            android:id="@+id/cirLoginButton"
+            android:id="@+id/LoginButton"
             style="@style/loginButton"
             android:text="Login"
             android:layout_gravity="center_horizontal"
@@ -69,7 +69,8 @@
             android:textColor="@color/primaryTextColor"
             android:text="@string/login_signup_hint"
             android:onClick="viewRegisterClicked"
-            android:layout_marginTop="@dimen/loginViewsMargin"/>
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:gravity="center_horizontal" />
 
 
     </LinearLayout>

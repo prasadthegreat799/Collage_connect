@@ -27,7 +27,7 @@ public class registeractivity extends AppCompatActivity
     private EditText mUsername;
     private  EditText mEmail;
     private EditText mPassword;
-    private EditText mPhone;
+    private EditText mId;
     private Button mRegbtn;
     ProgressDialog progressDialog;
 
@@ -45,7 +45,7 @@ public class registeractivity extends AppCompatActivity
         mUsername=(EditText)findViewById(R.id.regusername);
         mEmail=(EditText)findViewById(R.id.regemail);
         mPassword=(EditText)findViewById(R.id.regpassword);
-        mPhone=(EditText)findViewById(R.id.regmobilenumber);
+        mId=(EditText)findViewById(R.id.regmobilenumber);
         mRegbtn=(Button)findViewById(R.id.registebtn);
 
         mRegbtn.setOnClickListener(new View.OnClickListener()
@@ -56,21 +56,21 @@ public class registeractivity extends AppCompatActivity
                 String name=mUsername.getText().toString();
                 String mail=mEmail.getText().toString();
                 String password=mPassword.getText().toString();
-                String phonenumber=mPhone.getText().toString();
+                String id=mId.getText().toString();
 
                 if(name.isEmpty() || mail.isEmpty() || password.isEmpty() || password.isEmpty())
                 {
                     Toast.makeText(registeractivity.this,"Please,Fill all fields",Toast.LENGTH_SHORT).show();
                 }else
                 {
-                    register_user(name,mail,password,phonenumber);
+                    register_user(name,mail,password,id);
                 }
 
             }
         });
     }
 
-    private void register_user(final String name, final String mail, final String password, final String phonenumber)
+    private void register_user(final String name, final String mail, final String password, final String id)
     {
         progressDialog.show();
         mAuth.createUserWithEmailAndPassword(mail,password).addOnCompleteListener(new OnCompleteListener<AuthResult>()
@@ -89,7 +89,7 @@ public class registeractivity extends AppCompatActivity
                     String data=currentuser.toString().trim();
 
                     user_details.put("name",name);
-                    user_details.put("phone",phonenumber);
+                    user_details.put("id",id);
                     user_details.put("mail",mail);
                     user_details.put("password",password);
 

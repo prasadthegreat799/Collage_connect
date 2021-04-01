@@ -77,7 +77,8 @@
             android:textColor="@color/primaryTextColor"
             android:text="@string/signup_login_hint"
             android:onClick="loginmethod"
-            android:layout_marginTop="@dimen/loginViewsMargin"/>
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:gravity="center_horizontal" />
 
     </LinearLayout>
 </androidx.cardview.widget.CardView>

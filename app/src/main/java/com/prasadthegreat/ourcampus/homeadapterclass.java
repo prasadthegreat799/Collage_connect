@@ -23,9 +23,8 @@ public class homeadapterclass extends FirebaseRecyclerAdapter<homemodel, com.pra
 
     @Override
     protected void onBindViewHolder(@NonNull myviewholder holder, int position, @NonNull homemodel model) {
-            holder.worktxt1.setText(model.getWorktitle());
-            System.out.println("Work Data:"+model.getWorkdata());
-            holder.worktitle2.setText(model.getWorkdata());
+            holder.worktxt1.setText(model.getNotificationtitle());
+            holder.worktitle2.setText(model.getNotificationmsg());
 
     }
 

@@ -36,9 +36,9 @@ public class loginactivity extends AppCompatActivity
 
         mEmail=(EditText)findViewById(R.id.editTextEmail);
         mPassword=(EditText)findViewById(R.id.editTextPassword);
-        mLogin=(Button)findViewById(R.id.cirLoginButton);
+        mLogin=(Button)findViewById(R.id.LoginButton);
 
-        mLogin.setOnClickListener(new View.OnClickListener()
+      /*  mLogin.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View view)
@@ -53,7 +53,7 @@ public class loginactivity extends AppCompatActivity
                     login(email,password);
                 }
             }
-        });
+        });*/
     }
 
     private void login(String email, final String password)
